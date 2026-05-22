@@ -1,0 +1,6 @@
+{
+  "languages": ["TypeScript", "JavaScript", "PHP", "Python"],
+  "frameworks": ["Hono", "Express", "Prisma", "Laravel", "DrizzleORM"],
+  "tools": ["Docker", "Git", "GitHub Actions", "Cloudflare Workers"],
+  "other": ["PostgreSQL", "Supabase", "MySQL", "RESTful API", "JWT"]
+}

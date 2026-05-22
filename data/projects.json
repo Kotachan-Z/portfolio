@@ -1,0 +1,32 @@
+[
+  {
+    "id": "jirou",
+    "title": "二郎らーめん専用アプリ",
+    "description": "二郎系ラーメンに特化したグルメアプリ。\n\nHono + Cloudflare Workers によるサーバーレスAPIを設計・実装し、DrizzleORM で Cloudflare D1 / R2 を操作するバックエンドを担当。",
+    "tags": ["TypeScript", "Hono", "DrizzleORM", "Cloudflare Workers", "Cloudflare D1"],
+    "github": "https://github.com/halt0413/jirou",
+    "demo": "",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "gohoubi-pocket",
+    "title": "ご褒美ポケット",
+    "description": "親子で使えるタスク報酬管理アプリ。\n\nExpress + Prisma による REST API の設計・実装と、Supabase（PostgreSQL）のデータベース設計を担当。",
+    "tags": ["Node.js", "Express", "Prisma", "PostgreSQL", "Supabase", "JWT"],
+    "github": "https://github.com/ctrl-Yc/Ctrl-Y",
+    "demo": "",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "totte-me",
+    "title": "撮ってMe!",
+    "description": "写真撮影サービスのバックエンド開発。\n\nNode.js（Express）と Go（Echo）のハイブリッド構成で高速化の実現を担当。",
+    "tags": ["Node.js", "Go", "Express", "Echo", "PostgreSQL", "Docker", "GCP"],
+    "github": "https://github.com/C0mmitment/Commitment_backend",
+    "demo": "",
+    "image": "",
+    "featured": false
+  }
+]
