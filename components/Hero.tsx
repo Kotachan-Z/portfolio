@@ -16,7 +16,7 @@ export default function Hero() {
           Hello, I&apos;m
         </motion.p>
         <motion.h1
-          className="text-6xl md:text-8xl font-black mb-4 bg-gradient-to-r from-slate-800 to-indigo-700 bg-clip-text text-transparent"
+          className="text-6xl md:text-8xl font-black mb-4 bg-gradient-to-r from-zinc-900 to-zinc-600 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
