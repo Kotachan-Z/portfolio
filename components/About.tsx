@@ -18,27 +18,27 @@ export default function About() {
         </h2>
         <div className="w-12 h-1 bg-indigo-500 rounded-full mb-10" />
 
-        <div className="bg-white rounded-3xl shadow-sm p-8 md:p-12 border border-slate-100">
-          <p className="text-slate-600 text-lg leading-relaxed mb-8">{profile.bio}</p>
+        <div className="bg-white rounded-3xl shadow-sm p-6 md:p-12 border border-slate-100">
+          <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-8 whitespace-pre-line">{profile.bio}</p>
           <div className="flex flex-col gap-3">
             {profile.location && (
-              <div className="flex items-center gap-3 text-slate-500">
-                <MapPin size={18} className="text-slate-400" />
-                <span>{profile.location}</span>
+              <div className="flex items-start gap-3 text-slate-500 min-w-0">
+                <MapPin size={18} className="text-slate-400 mt-0.5 shrink-0" />
+                <span className="break-words min-w-0">{profile.location}</span>
               </div>
             )}
             {profile.email && (
-              <div className="flex items-center gap-3 text-slate-500">
-                <Mail size={18} className="text-slate-400" />
-                <a href={`mailto:${profile.email}`} className="hover:text-indigo-600 transition-colors">
+              <div className="flex items-start gap-3 text-slate-500 min-w-0">
+                <Mail size={18} className="text-slate-400 mt-0.5 shrink-0" />
+                <a href={`mailto:${profile.email}`} className="hover:text-indigo-600 transition-colors break-all min-w-0">
                   {profile.email}
                 </a>
               </div>
             )}
             {profile.github && (
-              <div className="flex items-center gap-3 text-slate-500">
-                <FaGithub size={18} className="text-slate-400" />
-                <a href={profile.github} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
+              <div className="flex items-start gap-3 text-slate-500 min-w-0">
+                <FaGithub size={18} className="text-slate-400 mt-0.5 shrink-0" />
+                <a href={profile.github} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors break-all min-w-0">
                   {profile.github.replace("https://", "")}
                 </a>
               </div>

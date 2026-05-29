@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import projects from "@/data/projects.json";
+import { SKILL_ICONS } from "@/lib/skillIcons";
 
 const ACCENT_COLORS = [
   "bg-indigo-400",
@@ -49,14 +50,21 @@ export default function Projects() {
               </div>
               <p className="text-slate-500 text-sm leading-relaxed mb-4 whitespace-pre-line">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-5">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs font-medium px-3 py-1 bg-slate-100 text-slate-600 rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
+                {project.tags.map((tag) => {
+                  const cfg = SKILL_ICONS[tag];
+                  const Icon = cfg?.icon;
+                  return (
+                    <span
+                      key={tag}
+                      className="flex items-center gap-1 text-xs font-medium px-2.5 py-1 bg-slate-100 text-slate-600 rounded-full"
+                    >
+                      {Icon && (
+                        <Icon style={{ color: cfg.color }} className="w-3.5 h-3.5 shrink-0" />
+                      )}
+                      {tag}
+                    </span>
+                  );
+                })}
               </div>
               <div className="flex gap-3">
                 {project.github && (
