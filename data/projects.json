@@ -6,7 +6,7 @@
     "tags": ["TypeScript", "Hono", "DrizzleORM", "Cloudflare Workers", "Cloudflare D1"],
     "github": "https://github.com/halt0413/jirou",
     "demo": "",
-    "image": "",
+    "image": "/images/jirou.png",
     "featured": false
   },
   {
@@ -16,7 +16,7 @@
     "tags": ["Node.js", "Express", "Prisma", "PostgreSQL", "Supabase", "JWT"],
     "github": "https://github.com/ctrl-Yc/Ctrl-Y",
     "demo": "",
-    "image": "",
+    "image": "/images/gohoubi-pocket.png",
     "featured": false
   },
   {
@@ -26,7 +26,7 @@
     "tags": ["Node.js", "Go", "Express", "Echo", "PostgreSQL", "Docker", "GCP"],
     "github": "https://github.com/C0mmitment/Commitment_backend",
     "demo": "",
-    "image": "",
+    "image": "/images/totte-me.png",
     "featured": false
   }
 ]

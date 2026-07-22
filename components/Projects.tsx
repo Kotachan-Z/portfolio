@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
+import Image from "next/image";
 import projects from "@/data/projects.json";
 import { SKILL_ICONS } from "@/lib/skillIcons";
 
@@ -38,6 +39,17 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-100"
           >
+            {project.image && (
+              <div className="relative aspect-video bg-slate-50 overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={`${project.title}のスクリーンショット`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            )}
             <div className={`h-1.5 ${ACCENT_COLORS[i % ACCENT_COLORS.length]}`} />
             <div className="p-6">
               <div className="flex items-start justify-between mb-3">
