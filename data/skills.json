@@ -1,6 +1,6 @@
 {
   "languages": ["TypeScript", "JavaScript", "PHP", "Python"],
-  "frameworks": ["Hono", "Express", "Prisma", "Laravel", "DrizzleORM"],
-  "tools": ["Docker", "Git", "GitHub Actions", "Cloudflare Workers"],
-  "other": ["PostgreSQL", "Supabase", "MySQL", "RESTful API", "JWT"]
+  "frameworks": ["Hono", "Express", "Prisma", "Laravel", "DrizzleORM", "React"],
+  "tools": ["Docker", "Git", "GitHub Actions", "Cloudflare Workers", "Bun", "Turbo", "Terraform", "Playwright"],
+  "other": ["PostgreSQL", "Supabase", "MySQL", "RESTful API", "JWT", "Zod", "GCP"]
 }

@@ -1,10 +1,12 @@
 import { IconType } from "react-icons";
 import {
   SiTypescript, SiJavascript, SiPhp, SiPython,
-  SiHono, SiExpress, SiPrisma, SiLaravel, SiDrizzle,
-  SiDocker, SiGit, SiGithubactions, SiCloudflare,
+  SiHono, SiExpress, SiPrisma, SiLaravel, SiDrizzle, SiReact, SiZod,
+  SiDocker, SiGit, SiGithubactions, SiCloudflare, SiBun, SiTurborepo, SiTerraform,
   SiPostgresql, SiSupabase, SiMysql, SiJsonwebtokens,
   SiNodedotjs, SiGo, SiGooglecloud,
+  SiCplusplus, SiEspressif, SiBluetooth, SiKotlin,
+  SiJetpackcompose, SiAndroid, SiRaspberrypi, SiArduino,
 } from "react-icons/si";
 
 export type SkillConfig = { icon: IconType; color: string };
@@ -19,10 +21,15 @@ export const SKILL_ICONS: Record<string, SkillConfig> = {
   "Prisma":             { icon: SiPrisma,        color: "#0C344B" },
   "Laravel":            { icon: SiLaravel,       color: "#FF2D20" },
   "DrizzleORM":         { icon: SiDrizzle,       color: "#C5F74F" },
+  "React":              { icon: SiReact,         color: "#61DAFB" },
+  "Zod":                { icon: SiZod,           color: "#3E67B1" },
   "Docker":             { icon: SiDocker,        color: "#2496ED" },
   "Git":                { icon: SiGit,           color: "#F05032" },
   "GitHub Actions":     { icon: SiGithubactions, color: "#2088FF" },
   "Cloudflare Workers": { icon: SiCloudflare,    color: "#F38020" },
+  "Bun":                { icon: SiBun,           color: "#FBF0DF" },
+  "Turbo":              { icon: SiTurborepo,     color: "#EF4444" },
+  "Terraform":          { icon: SiTerraform,     color: "#7B42BC" },
   "PostgreSQL":         { icon: SiPostgresql,    color: "#336791" },
   "Supabase":           { icon: SiSupabase,      color: "#3ECF8E" },
   "MySQL":              { icon: SiMysql,         color: "#4479A1" },
@@ -31,4 +38,12 @@ export const SKILL_ICONS: Record<string, SkillConfig> = {
   "Go":                 { icon: SiGo,           color: "#00ADD8" },
   "GCP":                { icon: SiGooglecloud,  color: "#4285F4" },
   "Cloudflare D1":      { icon: SiCloudflare,   color: "#F38020" },
+  "C++":                { icon: SiCplusplus,    color: "#00599C" },
+  "ESP32":              { icon: SiEspressif,    color: "#E7352C" },
+  "BLE":                { icon: SiBluetooth,    color: "#0082FC" },
+  "Kotlin":             { icon: SiKotlin,       color: "#7F52FF" },
+  "Jetpack Compose":    { icon: SiJetpackcompose, color: "#4285F4" },
+  "Android":            { icon: SiAndroid,      color: "#3DDC84" },
+  "Arduino":            { icon: SiArduino,      color: "#00878F" },
+  "Raspberry Pi":       { icon: SiRaspberrypi,  color: "#A22846" },
 };

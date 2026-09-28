@@ -1,0 +1,35 @@
+[
+  {
+    "id": "oshikatsu-mvp",
+    "company": "jig（3日間ハッカソン）",
+    "companyUrl": "https://www.jig.jp",
+    "title": "推し活マッチングアプリ MVP開発",
+    "period": "2026年9月",
+    "description": "3日間のチームハッカソンで開発した、推し活アプリのMVP。バックエンド担当として、フロントエンド担当者に渡すAPI仕様書の作成を含めた設計・実装を担当した。\n\nパスワード管理機能（Vault）はサーバー保存＋クライアント暗号化方式を採用。暗号文のみをサーバーに渡すことで安全性を保ちながら、端末間の同期を実現した。\n\nExpress + Prisma + Supabase(PostgreSQL) でREST APIを設計し、JWT認証とZodによるバリデーションを実装した。",
+    "tags": ["Node.js", "Express", "Prisma", "PostgreSQL", "Supabase", "JWT", "Zod", "React"],
+    "github": "https://github.com/jigintern/202609-3days-hackathon-team-a",
+    "image": "/images/oshikatsu-home-desktop.png"
+  },
+  {
+    "id": "fancommunications-internship",
+    "company": "ファンコミュニケーションズ",
+    "companyUrl": "https://www.fancs.com",
+    "title": "サマーインターン",
+    "period": "2026年8月",
+    "description": "アフィリエイト広告の管理基盤を想定した課題に参加。広告主・メディアパートナー・運営管理者の3種類の利用者が使うWebポータル群と、それを支えるREST API・クリック/コンバージョン計測サービスをチームで開発した。\n\n広告主向け管理ポータルのフロントエンド実装を中心に、REST API・計測サービス（トラッキング）・データベーススキーマ設計にも参加した。",
+    "tags": ["TypeScript", "Bun", "Turbo", "Hono", "PostgreSQL", "GCP", "Terraform", "Docker", "GitHub Actions", "Playwright"],
+    "github": "",
+    "image": ""
+  },
+  {
+    "id": "digital-garage-internship",
+    "company": "デジタルガレージ",
+    "companyUrl": "https://www.garage.co.jp",
+    "title": "インターンシップ",
+    "period": "2026年8月",
+    "description": "Expressを用いたバックエンド開発のインターンシップに参加した。",
+    "tags": ["Node.js", "Express"],
+    "github": "",
+    "image": ""
+  }
+]

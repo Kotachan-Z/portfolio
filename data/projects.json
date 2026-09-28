@@ -1,5 +1,25 @@
 [
   {
+    "id": "attendance-system",
+    "title": "顔認証・出席管理システム",
+    "description": "顔認証と深度センサーで「なりすまし」を防ぐ出席管理システム。Webアプリからカメラ処理まで一人で設計・実装。\n\nカメラ側は OAK-D-Lite（RGB＋深度カメラ）と InsightFace で顔認証を行い、深度データで平面（写真・スマホ動画）を検知して本人以外を弾く。開発はMac、本番は Raspberry Pi で常時稼働。\n\nバックエンドは Laravel 13 + MySQL。学生・授業・履修・時間割を管理し、曜日×時限のグリッドから出席セッションを毎週自動生成。cron で予定終了後に欠席を自動記録し、開始時刻と遅刻猶予に応じて出席／遅刻／欠席を自動判定する。",
+    "tags": ["Laravel", "PHP", "MySQL", "Python", "InsightFace", "Raspberry Pi", "OAK-D"],
+    "github": "https://github.com/Kotachan-Z/attendance-system",
+    "demo": "",
+    "image": "/images/attendance-system.png",
+    "featured": true
+  },
+  {
+    "id": "lightouch",
+    "title": "LighTouch（NFCスマートロック）",
+    "description": "NFCタグを「鍵」にしてライトを操作するIoTデバイス。ハードウェアのファームウェアからスマホアプリまでを一人で設計・実装。\n\nマイコンは ESP32-C3（PlatformIO / Arduino）。PN532 による NFCタグ読み取り、物理ボタン、BLE を制御し、初回セットアップ→通常待機→鍵登録→設定の4状態を持つステートマシンで動作。登録済みタグのUIDを不揮発メモリ（Preferences）に保存して認証する。\n\nアプリは Kotlin + Jetpack Compose の Android アプリ。BLE(GATT) 経由でパスワード認証・鍵の登録／削除・ライトのON/OFFを操作する。状態ごとにBLE電波をON/OFFして省電力化する工夫も実装。",
+    "tags": ["C++", "ESP32", "BLE", "NFC", "Kotlin", "Jetpack Compose", "Android"],
+    "github": "https://github.com/Freeeeesia/LighTouch",
+    "demo": "",
+    "image": "/images/lightouch.webp",
+    "featured": true
+  },
+  {
     "id": "jirou",
     "title": "二郎らーめん専用アプリ",
     "description": "二郎系ラーメンに特化したグルメアプリ。\n\nHono + Cloudflare Workers によるサーバーレスAPIを設計・実装し、DrizzleORM で Cloudflare D1 / R2 を操作するバックエンドを担当。",

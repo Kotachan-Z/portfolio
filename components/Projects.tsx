@@ -60,7 +60,11 @@ export default function Projects() {
                   </span>
                 )}
               </div>
-              <p className="text-slate-500 text-sm leading-relaxed mb-4 whitespace-pre-line">{project.description}</p>
+              <div className="text-slate-500 text-sm leading-relaxed mb-4 space-y-3">
+                {project.description.split("\n\n").map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </div>
               <div className="flex flex-wrap gap-2 mb-5">
                 {project.tags.map((tag) => {
                   const cfg = SKILL_ICONS[tag];
