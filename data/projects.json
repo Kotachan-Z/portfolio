@@ -12,7 +12,7 @@
   {
     "id": "lightouch",
     "title": "LighTouch（NFCスマートロック）",
-    "description": "NFCタグを「鍵」にしてライトを操作するIoTデバイス。ハードウェアのファームウェアからスマホアプリまでを一人で設計・実装。\n\nマイコンは ESP32-C3（PlatformIO / Arduino）。PN532 による NFCタグ読み取り、物理ボタン、BLE を制御し、初回セットアップ→通常待機→鍵登録→設定の4状態を持つステートマシンで動作。登録済みタグのUIDを不揮発メモリ（Preferences）に保存して認証する。\n\nアプリは Kotlin + Jetpack Compose の Android アプリ。BLE(GATT) 経由でパスワード認証・鍵の登録／削除・ライトのON/OFFを操作する。状態ごとにBLE電波をON/OFFして省電力化する工夫も実装。",
+    "description": "NFCタグを「鍵」にしてライトを操作するIoTデバイス。5人チームで、ハードウェアのファームウェアからスマホアプリまで開発。\n\nマイコンは ESP32-C3（PlatformIO / Arduino）。PN532 による NFCタグ読み取り、物理ボタン、BLE を制御し、初回セットアップ→通常待機→鍵登録→設定の4状態を持つステートマシンで動作。登録済みタグのUIDを不揮発メモリ（Preferences）に保存して認証する。\n\nアプリは Kotlin + Jetpack Compose の Android アプリ。BLE(GATT) 経由でパスワード認証・鍵の登録／削除・ライトのON/OFFを操作する。状態ごとにBLE電波をON/OFFして省電力化する工夫も実装。",
     "tags": ["C++", "ESP32", "BLE", "NFC", "Kotlin", "Jetpack Compose", "Android"],
     "github": "https://github.com/Freeeeesia/LighTouch",
     "demo": "",
